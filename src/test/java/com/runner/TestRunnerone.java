@@ -11,14 +11,12 @@ import reporting.Reports;
 @CucumberOptions
 (
 		//features= "src/test/resources/FeatureFiles/Applyloan.feature",
-				features= "src/test/resources/FeatureFiles/VerifyCustomerID.feature",
+				features= "src/test/resources/FeatureFiles/Tasks.feature",
 					//	features= "src/test/resources/FeatureFiles",
 						//features= "src/test/resources/FeatureFiles",
 							//	features= "src/test/resources/FeatureFiles",
 glue= {"com.stepDefinitions","com.hooks"},
-dryRun=false,
 monochrome=true,
-tags="@PrintStatement",
 plugin= {"pretty","json:src/test/resourses/Reports/output.json"})
 public class TestRunnerone {
 	@AfterClass

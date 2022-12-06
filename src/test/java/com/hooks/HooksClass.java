@@ -26,22 +26,20 @@ public class HooksClass {
 			DriverManager.launchBrowser();
 		}
 		scenarioName = scenario.getName();
-		DriverManager.getDriver().get(Constants.APP_URL);
-		DriverManager.getDriver().manage().window().maximize();
-		DriverManager.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
-		LoginPage.getInstance().sendMobileNumber(Constants.MOBILE);
+		
+		/*LoginPage.getInstance().sendMobileNumber(Constants.MOBILE);
 		LoginPage.getInstance().clickProceedLogin();
 		LoginPage.getInstance().sendPassword(Constants.PASSWORD);
-		LoginPage.getInstance().clickLoginSecurely();
+		LoginPage.getInstance().clickLoginSecurely();*/
 	}
 	@After
 	public void logout(Scenario scen) {
-		if(scen.isFailed()) {
+		/*if(scen.isFailed()) {
 			
 		UserLoggedPage.getInstance().clickLogout();}
 		
+	}*/
 	}
-	
 	
 	
 	

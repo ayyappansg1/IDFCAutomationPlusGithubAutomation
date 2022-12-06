@@ -42,10 +42,9 @@ public class Commonutils {
 			m.printStackTrace();
 		}
 		Constants.APP_URL=properties.getProperty("url");
-		Constants.MOBILE=properties.getProperty("mobile");
 		Constants.PASSWORD=properties.getProperty("password");
 		Constants.BROWSER=properties.getProperty("browser");
-		Constants.USERID=properties.getProperty("userid");
+		Constants.USERNAME=properties.getProperty("username");
 	}
 	public void selectDropdown(WebElement element,String howTo,String value) {
 		Select select=new Select(element);
